@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {v4 as uuidv4} from 'uuid';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import "./App.css"
  
@@ -53,19 +54,20 @@ const App = () => {
   
   
   return (
-    <>
+    <Router>
     <div className='container'>
       <Header />
       <AddTask handleTaskAddition={handleTaskAddition} />
-      <Tasks 
-      tasks={tasks} 
-      handleTaskClick={handleTaskClick}
-      handleTaskDeletion={handleTaskDeletion}
-      />
+          <Tasks 
+          tasks={tasks} 
+          handleTaskClick={handleTaskClick}
+          handleTaskDeletion={handleTaskDeletion}/>
+
+    
     </div>
 
 
-    </>
+    </Router>
   );
 }
 
