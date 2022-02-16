@@ -1,10 +1,21 @@
 import React from "react";
 
+import "./AddTask.css";
+import Button from "./Button";
+
 const AddTask = () => {
+
     return ( 
-        <input type="text" />
+
+        <div className="add-task-container">
+        <input className="add-task-input" type="text" />
+        <div className="add-task-button-container">
+        <Button>Adcionar</Button>
+        </div>
+        </div>
+
     );
-}
+};
 
 
 export default AddTask;
