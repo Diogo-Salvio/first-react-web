@@ -20,7 +20,7 @@
 .remove-task-button {
     background-color: rgb(120, 120 ,120);
     border: none;
-    font-size: 16px;
+    font-size: 24px;
     cursor: pointer;
     color: #F7235F;
 }
