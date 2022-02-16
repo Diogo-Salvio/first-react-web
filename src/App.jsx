@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import "./App.css"
-import Tasks from '.components/Tasks'
+import AddTask from './components/AddTask';
+import Tasks from "./components/Tasks"
 
 const App = () => {
   
@@ -15,20 +16,22 @@ const App = () => {
       id: '2',
       title: 'Ler Livros',
       completed: true,
-    }
-  ])
+    },
+  ]);
+
   
   
   
   return (
     <>
     <div className='container'>
-      <Tasks />
+      <AddTask />
+      <Tasks tasks={tasks} />
     </div>
 
 
     </>
-  )
+  );
 }
 
 export default App;
